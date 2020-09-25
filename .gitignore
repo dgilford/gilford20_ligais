@@ -3,3 +3,8 @@
 # ignore Jupyter notebook and Python extras
 .ipynb_checkpoints/
 __pycache__/
+
+# ignore gpflow extras
+*.ckpt
+./models/checkpoint
+
