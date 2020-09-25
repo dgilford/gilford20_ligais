@@ -58,7 +58,7 @@ To get it up and running on your system, clone the repository and ensure that yo
 
 * **[Figure 1a](./figures/Fig1a.pdf)** - Timeseries of LIG ice-sheet model simulations (0-5ka), color-coded by CLIFVMAX
 * **[Figure 1b](./figures/Fig1b.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CLIFVMAX
-* **[Figure 2a](./figures/Fig2a.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CLIFVMAX
+* **[Figure 2a](./figures/Fig2a.pdf)** - LIG Simulations and Emulator output across the ice-sheet model parameter space
 
 #### Supplemental (see manuscript supplement for full captions):
 
