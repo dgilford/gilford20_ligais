@@ -1,0 +1,4 @@
+# .gitignore
+
+# ignore Jupyter notebook things
+.ipynb_checkpoints/
