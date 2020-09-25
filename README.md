@@ -41,7 +41,31 @@ To get it up and running on your system, clone the repository and ensure that yo
 
 ## File Descriptions
 
-(under construction)
+### Analysis and Emulator:
+
+* **[lig_utilities.py](./lig_utilities.py)** - Utility file containing functions for emulation and analysis.
+* **[construct_lig_emulator.ipynb](./construct_lig_emulator.ipynb)** - Notebook creating the Last Interglacial emulator optimized+conditioned on the training data.
+* **[construct_rcp_emulator.ipynb](./construct_rcp_emulator.ipynb)** - Notebook creating the RCP8.5 emulator optimized+conditioned on the training data.
+
+### Data:
+
+* **[lig_data_dec18.pk1](./data/lig_data_dec18.pk1)** - Last Interglacial Ensemble of 196 PSU3Dice simulations developed by Rob DeConto in December 2018.
+* **[rcp85_data_sept18.pk1](./data/lig_data_dec18.pk1)** - Representative Concentration Pathway 8.5 Ensemble of 196 PSU3Dice simulations developed by Rob DeConto in September 2018.
+
+### Figures (see manuscript for full captions):
+
+#### Main Text (see manuscript for full captions):
+
+* **[Figure 1a](./figures/Fig1a.pdf)** - Timeseries of LIG ice-sheet model simulations (0-5ka), color-coded by CLIFVMAX
+* **[Figure 1b](./figures/Fig1b.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CLIFVMAX
+* **[Figure 2a](./figures/Fig2a.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CLIFVMAX
+
+#### Supplemental (see manuscript supplement for full captions):
+
+* **[Figure S1a](./figures/FigS1a.pdf)** - Timeseries of LIG ice-sheet model simulations (0-5ka), color-coded by CREVLIQ
+* **[Figure S1b](./figures/FigS1b.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CREVLIQ
+* **[Figure S2](./figures/FigS2.pdf)** - Contours of LIG and RCP8.5 (2100) simulations across the ice-sheet model parameter space
+* **[Figure S7](./figures/FigS7.pdf)** - LIG emulator variance across the ice-sheet model parameter space
 
 ## Authors
 
