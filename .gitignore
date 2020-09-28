@@ -5,6 +5,6 @@
 __pycache__/
 
 # ignore gpflow extras
-*.ckpt
-./models/checkpoint
+*.ckpt*
+*checkpoint*
 
