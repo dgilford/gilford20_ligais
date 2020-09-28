@@ -7,7 +7,7 @@ Gilford et al. (2020), published in *JGR-Earth Surface* (updated September 2020)
 
 > Previous studies have interpreted Last Interglacial (LIG; ~129--116 ka) sea-level estimates in multiple different ways to calibrate projections of future Antarctic ice-sheet (AIS) mass loss and associated sea-level rise. This study systematically explores the extent to which LIG constraints could inform future Antarctic contributions to sea-level rise. We develop a Gaussian process emulator of an ice-sheet model to produce continuous probabilistic projections of Antarctic sea-level contributions over the LIG and a future high-emissions scenario. We use a Bayesian approach conditioning emulator projections on a set of LIG constraints to find associated likelihoods of model parameterizations. LIG estimates inform both the probability of past and future ice-sheet instabilities and projections of future sea-level rise through 2150. Although best-available LIG estimates do not meaningfully constrain Antarctic mass loss projections or physical processes until 2060, they become increasingly informative over the next 130 years. Uncertainties of up to 50 cm remain in future projections even if LIG Antarctic mass loss is precisely known (+/-5 cm), indicating there is a limit to how informative the LIG could be for ice-sheet model future projections. The efficacy of LIG constraints on Antarctic mass loss also depends on assumptions about the Greenland ice sheet and LIG sea-level chronology. However, improved field measurements and understanding of LIG sea levels still have potential to improve future sea-level projections, highlighting the importance of continued observational efforts.
 
-If you have any questions, comments, or feedback on this work or code, please [contact Daniel](mailto:daniel.gilford@rutgers.edu) or open an [Issue](https://github.com/Rutgers-ESSP/lig_constraints/issues) in the repository.
+If you have any questions, comments, or feedback on this work or code, please [contact Daniel](mailto:daniel.gilford@rutgers.edu) or open an [Issue](https://github.com/dgilford/gilford20_ligais/issues) in the repository.
 
 ## Citation
 
@@ -24,6 +24,8 @@ JGR-Earth Surface (accepted September 2020).
 The ice-sheet data used to construct the emulator used in this work has been archived at Zenodo with the doi:
 
 <a href="https://doi.org/10.5281/zenodo.3478486"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3478486.svg" alt="DOI"></a>
+
+Other data sources, including from [Kopp et al. (2009)](https://www.nature.com/articles/nature08686), are included in this repository and should be appropriately cited if used.
 
 ## Getting Started
 
@@ -43,29 +45,45 @@ To get it up and running on your system, clone the repository and ensure that yo
 
 ### Analysis and Emulator:
 
-* **[lig_utilities.py](./lig_utilities.py)** - Utility file containing functions for emulation and analysis.
-* **[construct_lig_emulator.ipynb](./construct_lig_emulator.ipynb)** - Notebook creating the Last Interglacial emulator optimized+conditioned on the training data.
-* **[construct_rcp_emulator.ipynb](./construct_rcp_emulator.ipynb)** - Notebook creating the RCP8.5 emulator optimized+conditioned on the training data.
+* **[lig_utilities.py](./lig_utilities.py)** - Utility file containing functions for emulation and analysis
+* **[construct_lig_emulator.ipynb](./construct_lig_emulator.ipynb)** - Notebook creating the Last Interglacial emulator optimized+conditioned on the training data
+* **[construct_rcp_emulator.ipynb](./construct_rcp_emulator.ipynb)** - Notebook creating the RCP8.5 emulator optimized+conditioned on the training data
 
 ### Data:
 
-* **[lig_data_dec18.pk1](./data/lig_data_dec18.pk1)** - Last Interglacial Ensemble of 196 PSU3Dice simulations developed by Rob DeConto in December 2018.
-* **[rcp85_data_sept18.pk1](./data/lig_data_dec18.pk1)** - Representative Concentration Pathway 8.5 Ensemble of 196 PSU3Dice simulations developed by Rob DeConto in September 2018.
+* **[lig_data_dec18.pk1](./data/lig_data_dec18.pk1)** - Last Interglacial Ensemble of 196 PSU3Dice simulations developed by Rob DeConto in December 2018
+* **[rcp85_data_sept18.pk1](./data/lig_data_dec18.pk1)** - Representative Concentration Pathway 8.5 Ensemble of 196 PSU3Dice simulations developed by Rob DeConto in September 2018
+* **[K09_data.mat](./data/K09_data.mat)** - MATLAB file containing Gaussian Process samples from  the Kopp et al. (2009) Last Interglacial probabilistic assessment
 
-### Figures (see manuscript for full captions):
+### Figures:
 
-#### Main Text (see manuscript for full captions):
+#### Main Text (see main manuscript for full captions):
 
 * **[Figure 1a](./figures/Fig1a.pdf)** - Timeseries of LIG ice-sheet model simulations (0-5ka), color-coded by CLIFVMAX
 * **[Figure 1b](./figures/Fig1b.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CLIFVMAX
 * **[Figure 2a](./figures/Fig2a.pdf)** - LIG ice-sheet model simulations and emulator output across the ice-sheet model parameter space
+* **[Figure 2b](./figures/Fig2b.pdf)** - RCP8.5 ice-sheet model simulations and emulator output (in 2100) across the ice-sheet model parameter space
+* **[Figure 4a](./figures/Fig4a.pdf)** - Unconstrained and specified LIG constraint distributions of AIS mass loss in sea-level equivalent
+* **[Figure 5a](./figures/Fig5a.pdf)** - Posterior marginal probability distributions of CLIFVMAX as a function of LIG AIS mass loss
+* **[Figure 5b](./figures/Fig5b.pdf)** - Posterior marginal probability distributions of CREVLIQ as a function of LIG AIS mass loss
 
 #### Supplemental (see manuscript supplement for full captions):
 
 * **[Figure S1a](./figures/FigS1a.pdf)** - Timeseries of LIG ice-sheet model simulations (0-5ka), color-coded by CREVLIQ
 * **[Figure S1b](./figures/FigS1b.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CREVLIQ
 * **[Figure S2](./figures/FigS2.pdf)** - Contours of LIG and RCP8.5 (2100) simulations across the ice-sheet model parameter space
+* **[Figure S3](./figures/FigS3.pdf)** - Prediction errors from leave-one-out analysis for LIG emulator validation
+* **[Figure S4](./figures/FigS4.pdf)** - Prediction errors from leave-one-out analysis for RCP8.5 emulator validation (at 2000, 2050, 2100, 2150)
+* **[Figure S5a](./figures/FigS5a.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the D20-U constraint
+* **[Figure S5b](./figures/FigS5b.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the D20-N constraint
+* **[Figure S5c](./figures/FigS5c.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the E19-U constraint
+* **[Figure S5d](./figures/FigS5d.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the K09-125ka constraint
+* **[Figure S5e](./figures/FigS5e.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the K09-Max-3kyrSmooth constraint
 * **[Figure S7](./figures/FigS7.pdf)** - LIG emulator variance across the ice-sheet model parameter space
+
+### Miscellaneous:
+
+* **[/colormaps/](./data/colormaps/)** - Colormap files provided by [F. Crameri (2018)](https://www.geosci-model-dev.net/11/2541/2018/).
 
 ## Authors
 
