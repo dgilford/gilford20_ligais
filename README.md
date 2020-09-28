@@ -43,11 +43,24 @@ To get it up and running on your system, clone the repository and ensure that yo
 
 ## File Descriptions
 
-### Analysis and Emulator:
+### Analysis:
 
-* **[lig_utilities.py](./lig_utilities.py)** - Utility file containing functions for emulation and analysis
+#### Emulator Construction:
+
 * **[construct_lig_emulator.ipynb](./construct_lig_emulator.ipynb)** - Notebook creating the Last Interglacial emulator optimized+conditioned on the training data
 * **[construct_rcp_emulator.ipynb](./construct_rcp_emulator.ipynb)** - Notebook creating the RCP8.5 emulator optimized+conditioned on the training data
+* **[lig_utilities.py](./lig_utilities.py)** - Utility file containing functions for emulation and analysis
+* **[plot_original_simulations.ipynb](./plot_original_simulations.ipynb)** - Notebook exploring and visualizing the ice-sheet model ensembles (training data)
+
+#### Emulator Sampling:
+* **[lhc_design.ipynb](./lhc_design.ipynb)** - Notebook developing the latin-hypercube design used to sample the emulators
+* **[sample_lig_emulator.ipynb](./sample_lig_emulator.ipynb)** - Notebook specifying the LIG constraint distributions, finding the likelihoods of each CLIFVMAX/CREVLIQ sample, and sampling the LIG emulator weighted by these likelihoods
+* **[sample_rcp_emulator.ipynb](./sample_rcp_emulator.ipynb)** - Notebook sampling the RCP8.5 emulator weighted by the likelihoods of each CLIFVMAX/CREVLIQ sample (inform by each specified LIG constraint)
+
+#### Emulator Validation:
+* **[lig_cv_validation.ipynb](./lig_cv_validation.ipynb)** - Notebook exploring various covariances functions to inform emulator construction
+* **[loo_lig_analyses.ipynb](./loo_lig_analyses.ipynb)** - Notebook analyzing the validity of the LIG emulator with the Bastos and O'Hagan (2009) Leave-one-out method
+* **[loo_rcp_analyses.ipynb](./loo_rcp_analyses.ipynb)** - Notebook analyzing the validity of the RCP8.5 emulator with the Bastos and O'Hagan (2009) Leave-one-out method
 
 ### Data:
 
@@ -63,9 +76,15 @@ To get it up and running on your system, clone the repository and ensure that yo
 * **[Figure 1b](./figures/Fig1b.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CLIFVMAX
 * **[Figure 2a](./figures/Fig2a.pdf)** - LIG ice-sheet model simulations and emulator output across the ice-sheet model parameter space
 * **[Figure 2b](./figures/Fig2b.pdf)** - RCP8.5 ice-sheet model simulations and emulator output (in 2100) across the ice-sheet model parameter space
+* **[Figure 3](./figures/Fig3.pdf)** - Timeseries of the RCP8.5 emulated prior probability distribution of future AIS mass loss
 * **[Figure 4a](./figures/Fig4a.pdf)** - Unconstrained and specified LIG constraint distributions of AIS mass loss in sea-level equivalent
+* **[Figure 4b](./figures/Fig4b.pdf)** - Posterior RCP8.5 probability densities in 2100 as a function of (conditional on) the LIG
 * **[Figure 5a](./figures/Fig5a.pdf)** - Posterior marginal probability distributions of CLIFVMAX as a function of LIG AIS mass loss
 * **[Figure 5b](./figures/Fig5b.pdf)** - Posterior marginal probability distributions of CREVLIQ as a function of LIG AIS mass loss
+* **[Figure 6a](./figures/Fig6a.pdf)** - Unconstrained and posterior projected probability distributions of AIS mass loss in 2100
+* **[Figure 6b](./figures/Fig6b.pdf)** - Unconstrained and posterior projected probability distributions of AIS mass loss in 2150
+* **[Figure 7a](./figures/Fig7a.pdf)** - Timeseries of the unconstrained and posterior probability distribution of AIS mass loss assuming the D20-U is narrowed by 50%
+* **[Figure 7b](./figures/Fig7b.pdf)** - Timeseries of the posterior probability distributions of AIS mass loss assuming LIG contributions were High (>6m) or Low (<3.5m)
 
 #### Supplemental (see manuscript supplement for full captions):
 
@@ -79,6 +98,7 @@ To get it up and running on your system, clone the repository and ensure that yo
 * **[Figure S5c](./figures/FigS5c.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the E19-U constraint
 * **[Figure S5d](./figures/FigS5d.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the K09-125ka constraint
 * **[Figure S5e](./figures/FigS5e.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the K09-Max-3kyrSmooth constraint
+* **[Figure S6](./figures/FigS6.pdf)** - Posterior RCP8.5 probability densities in 2150 as a function of (conditional on) the LIG
 * **[Figure S7](./figures/FigS7.pdf)** - LIG emulator variance across the ice-sheet model parameter space
 
 ### Miscellaneous:
