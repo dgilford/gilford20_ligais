@@ -56,6 +56,7 @@ To get it up and running on your system, clone the repository and ensure that yo
 * **[lhc_design.ipynb](./lhc_design.ipynb)** - Notebook developing the latin-hypercube design used to sample the emulators
 * **[sample_lig_emulator.ipynb](./sample_lig_emulator.ipynb)** - Notebook specifying the LIG constraint distributions, finding the likelihoods of each CLIFVMAX/CREVLIQ sample, and sampling the LIG emulator weighted by these likelihoods
 * **[sample_rcp_emulator.ipynb](./sample_rcp_emulator.ipynb)** - Notebook sampling the RCP8.5 emulator weighted by the likelihoods of each CLIFVMAX/CREVLIQ sample (inform by each specified LIG constraint)
+* **[visualize_lig_error_importance.ipynb](./visualize_lig_error_importance.ipynb)** - Notebook illustrating how future projection uncertainties vary as a function of LIG constraint uncertainties
 
 #### Emulator Validation:
 * **[lig_cv_validation.ipynb](./lig_cv_validation.ipynb)** - Notebook exploring various covariances functions to inform emulator construction
@@ -85,6 +86,10 @@ To get it up and running on your system, clone the repository and ensure that yo
 * **[Figure 6b](./figures/Fig6b.pdf)** - Unconstrained and posterior projected probability distributions of AIS mass loss in 2150
 * **[Figure 7a](./figures/Fig7a.pdf)** - Timeseries of the unconstrained and posterior probability distribution of AIS mass loss assuming the D20-U is narrowed by 50%
 * **[Figure 7b](./figures/Fig7b.pdf)** - Timeseries of the posterior probability distributions of AIS mass loss assuming LIG contributions were High (>6m) or Low (<3.5m)
+* **[Figure 8A](./figures/Fig8A.pdf)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, only Field constraints (8+/-0.2m)
+* **[Figure 8B](./figures/Fig8B.pdf)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, corrected for GIA/fingerprints (7.6+/-1.7m)
+* **[Figure 8C](./figures/Fig8C.pdf)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, corrected for GIA/fingerprints+DT (8.4+/-2.5m)
+* **[Figure 8D](./figures/Fig8D.pdf)** - Posterior projected probability distributions of AIS mass loss in 2100 associated with different assumed GrIS sea-level contributions
 
 #### Supplemental (see supplement for full captions):
 
@@ -102,6 +107,7 @@ To get it up and running on your system, clone the repository and ensure that yo
 * **[Figure S7](./figures/FigS7.pdf)** - LIG emulator variance across the ice-sheet model parameter space
 * **[Figure S8](./figures/FigS8.pdf)** - LIG probability distributions comparing the final model with an alternative model form. While not explicitly created in the accompanying scripts, this can be reproduced by replacing the emulator covariance functions in each notebooj with an alternative covariance structure (see paper supplement for details)
 * **[Figure S9](./figures/FigS9.pdf)** - Posterior RCP8.5 probability densities in 2100 as a function of (conditional on) the LIG with an alternative model form. While not explicitly created in the accompanying scripts, this can be reproduced by replacing the emulator covariance functions in each notebooj with an alternative covariance structure (see paper supplement for details)
+* **[Figure S10](./figures/FigS10.pdf)** - Posterior projected probability distributions of AIS mass loss in 2100 associated with narrowing the D20-U LIG constraint
 
 ### Miscellaneous:
 
