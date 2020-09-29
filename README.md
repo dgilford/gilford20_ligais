@@ -30,7 +30,7 @@ Other data sources, including from [Kopp et al. (2009)](https://www.nature.com/a
 ## Getting Started
 
 This codebase requires **Python version 3.5+** to run. It was written and tested with Python 3.5.2 and Jupyter Notebook 5.4.0.
-To get it up and running on your system, clone the repository and ensure that you have the [required dependencies](requirements.txt) and Jupyter Notebook.
+To get it up and running on your system, clone the repository and ensure that you have the [required dependencies](./requirements.txt) and Jupyter Notebook.
 
 ### Dependencies
 
@@ -38,8 +38,8 @@ To get it up and running on your system, clone the repository and ensure that yo
 * [GPflow](https://gpflow.readthedocs.io/en/stable/) 1.3.0
 * [Matplotlib](https://matplotlib.org/) 1.5.3
 * [NumPy](https://numpy.org/) 1.16.0
-* [TensorFlow](https://www.tensorflow.org/) 1.12.1
-* [SciPy](https://www.scipy.org/) 1.4.1
+* [TensorFlow](https://www.tensorflow.org/) 1.8.0
+* [SciPy](https://www.scipy.org/) 1.5.2
 
 ## File Descriptions
 
@@ -111,7 +111,9 @@ To get it up and running on your system, clone the repository and ensure that yo
 
 ### Miscellaneous:
 
-* **[/colormaps/](./data/colormaps/)** - Colormap files provided by [F. Crameri (2018)](https://www.geosci-model-dev.net/11/2541/2018/).
+* **[/colormaps/](./data/colormaps/)** - Colormap files provided by [F. Crameri (2018)](https://www.geosci-model-dev.net/11/2541/2018/)
+* **[requirements.txt](./requirements.txt)** - List of packages required to compile and run code within this repository
+
 
 ## Authors
 
