@@ -86,7 +86,7 @@ To get it up and running on your system, clone the repository and ensure that yo
 * **[Figure 7a](./figures/Fig7a.pdf)** - Timeseries of the unconstrained and posterior probability distribution of AIS mass loss assuming the D20-U is narrowed by 50%
 * **[Figure 7b](./figures/Fig7b.pdf)** - Timeseries of the posterior probability distributions of AIS mass loss assuming LIG contributions were High (>6m) or Low (<3.5m)
 
-#### Supplemental (see manuscript supplement for full captions):
+#### Supplemental (see supplement for full captions):
 
 * **[Figure S1a](./figures/FigS1a.pdf)** - Timeseries of LIG ice-sheet model simulations (0-5ka), color-coded by CREVLIQ
 * **[Figure S1b](./figures/FigS1b.pdf)** - Timeseries of RCP8.5 ice-sheet model simulations (2000-2150), color-coded by CREVLIQ
@@ -100,6 +100,8 @@ To get it up and running on your system, clone the repository and ensure that yo
 * **[Figure S5e](./figures/FigS5e.pdf)** - Likelihood functions of CLIFVMAX/CREVLIQ set samples from the K09-Max-3kyrSmooth constraint
 * **[Figure S6](./figures/FigS6.pdf)** - Posterior RCP8.5 probability densities in 2150 as a function of (conditional on) the LIG
 * **[Figure S7](./figures/FigS7.pdf)** - LIG emulator variance across the ice-sheet model parameter space
+* **[Figure S8](./figures/FigS8.pdf)** - LIG probability distributions comparing the final model with an alternative model form. While not explicitly created in the accompanying scripts, this can be reproduced by replacing the emulator covariance functions in each notebooj with an alternative covariance structure (see paper supplement for details)
+* **[Figure S9](./figures/FigS9.pdf)** - Posterior RCP8.5 probability densities in 2100 as a function of (conditional on) the LIG with an alternative model form. While not explicitly created in the accompanying scripts, this can be reproduced by replacing the emulator covariance functions in each notebooj with an alternative covariance structure (see paper supplement for details)
 
 ### Miscellaneous:
 
