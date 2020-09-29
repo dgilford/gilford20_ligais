@@ -86,10 +86,10 @@ To get it up and running on your system, clone the repository and ensure that yo
 * **[Figure 6b](./figures/Fig6b.pdf)** - Unconstrained and posterior projected probability distributions of AIS mass loss in 2150
 * **[Figure 7a](./figures/Fig7a.pdf)** - Timeseries of the unconstrained and posterior probability distribution of AIS mass loss assuming the D20-U is narrowed by 50%
 * **[Figure 7b](./figures/Fig7b.pdf)** - Timeseries of the posterior probability distributions of AIS mass loss assuming LIG contributions were High (>6m) or Low (<3.5m)
-* **[Figure 8A](./figures/Fig8A.pdf)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, only Field constraints (8+/-0.2m)
-* **[Figure 8B](./figures/Fig8B.pdf)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, corrected for GIA/fingerprints (7.6+/-1.7m)
-* **[Figure 8C](./figures/Fig8C.pdf)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, corrected for GIA/fingerprints+DT (8.4+/-2.5m)
-* **[Figure 8D](./figures/Fig8D.pdf)** - Posterior projected probability distributions of AIS mass loss in 2100 associated with different assumed GrIS sea-level contributions
+* **[Figure 8A](./figures/Fig8A.svg)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, only Field constraints (8+/-0.2m)
+* **[Figure 8B](./figures/Fig8B.svg)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, corrected for GIA/fingerprints (7.6+/-1.7m)
+* **[Figure 8C](./figures/Fig8C.svg)** - Range of RCP8.5 95% credible interval in 2100 as a function of the LIG uncertainty range, corrected for GIA/fingerprints+DT (8.4+/-2.5m)
+* **[Figure 8D](./figures/Fig8D.svg)** - Posterior projected probability distributions of AIS mass loss in 2100 associated with different assumed GrIS sea-level contributions
 
 #### Supplemental (see supplement for full captions):
 
