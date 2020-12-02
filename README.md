@@ -1,7 +1,7 @@
 # Code Supporting "Could the Last Interglacial Constrain Projections of Future Antarctic Ice Mass Loss and Sea-level Rise?" by Gilford et al. (2020)
 
 This repository is the Python code base for [Gilford et al. 2020](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JF005418):  "Could the Last Interglacial Constrain Projections of Future Antarctic Ice Mass Loss and Sea-level Rise?"
-Gilford et al. (2020), published in *JGR-Earth Surface* (updated September 2020).
+Gilford et al. (2020), published in *JGR-Earth Surface*.
 
 **Project abstract:**
 
