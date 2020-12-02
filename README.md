@@ -1,6 +1,6 @@
 # Code Supporting "Could the Last Interglacial Constrain Projections of Future Antarctic Ice Mass Loss and Sea-level Rise?" by Gilford et al. (2020)
 
-This repository is the Python code base for [Gilford et al. 2020](https://www.essoar.org/doi/10.1002/essoar.10501078.3):  "Could the Last Interglacial Constrain Projections of Future Antarctic Ice Mass Loss and Sea-level Rise?"
+This repository is the Python code base for [Gilford et al. 2020](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JF005418):  "Could the Last Interglacial Constrain Projections of Future Antarctic Ice Mass Loss and Sea-level Rise?"
 Gilford et al. (2020), published in *JGR-Earth Surface* (updated September 2020).
 
 **Project abstract:**
@@ -11,12 +11,12 @@ If you have any questions, comments, or feedback on this work or code, please [c
 
 ## Citation
 
-A [preprint](https://www.essoar.org/doi/10.1002/essoar.10501078.3) of Gilford et al. (2020) is available at ESSOAr.
+Gilford et al. (2020) has been published and is [open access at JGR-Earth Surface](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JF005418).
 If you use any or all of this code in your work, please include the citation:
 ```
-Daniel M. Gilford, Erica L. Ashe, Robert M. DeConto, Robert E. Kopp, David Pollard, Alessio Rovere, 2020: 
-Could the Last Interglacial Constrain Projections of Future Antarctic Ice Mass Loss and Sea-level Rise? 
-JGR-Earth Surface (accepted September 2020).
+Gilford, D. M., Ashe, E. L., DeConto, R. M., Kopp, R. E., Pollard, D., & Rovere, A. (2020). 
+Could the Last Interglacial constrain projections of future Antarctic ice mass loss and sea‐level rise?. 
+Journal of Geophysical Research: Earth Surface, 125, e2019JF005418. https://doi.org/10.1029/2019JF005418
 ```
 
 ## Data
